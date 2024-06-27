@@ -1,0 +1,290 @@
+/* Styles for B-main-container */
+.B-main-container {
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  /* Styles for B-tour-section */
+  .B-tour-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Styles for B-tour-content */
+  .B-tour-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .Detail_tele{
+    padding: 10px;
+  }
+  .Detail_tele span, .Detail_tele h1{
+     color: rgb(63, 0, 0);
+  }
+  /* Styles for B-tour-left */
+  .B-tour-left {
+    margin-right: 20px;
+    width: 60%;
+    border: 1px rgb(255, 255, 255) solid;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.3);  }
+  
+  /* Styles for B-tour-right */
+  .B-tour-right {
+    margin-left: 20px;
+    width: 40%;
+    border: 1px rgb(255, 255, 255) solid;
+    height: 660px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.3);
+  }
+  
+ /* Styles for B-tour-details */
+.B-tour-details {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Styles for B-tour-info */
+  .B-tour-info {
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for B-tour-title */
+  .B-tour-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Styles for B-tour-price */
+  .B-tour-price {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for B-tour-duration */
+  .B-tour-duration {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Styles for B-tour-ratings */
+  .B-tour-ratings {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Styles for B-tour-ratings-quantity */
+  .B-tour-ratings-quantity {
+    font-weight: bold;
+  }
+  
+  /* Styles for B-tour-group-size */
+  .B-tour-group-size {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Styles for B-tour-description */
+  .B-tour-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+  }
+  
+/* Styles for B-review-header */
+.B-review-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for B-review-stars */
+  .B-review-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for B-review-stars label */
+  .B-review-stars label {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  /* Hide radio inputs */
+  .B-review-stars input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Styles for checked star */
+  .B-review-stars input:checked + .fa-star {
+    color: #ffc107;
+  }
+  
+  /* Styles for B-review-input */
+  .B-review-input {
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for B-relative */
+  .B-relative {
+    position: relative;
+  }
+  .B-review-text1{
+    width: 100%;
+    padding: 10px;
+    padding-left: 50px;
+    font-size: 1rem;
+    background-color: #fff;
+    height: 100px;
+  }
+  /* Styles for B-review-text */
+  .B-review-text {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Styles for B-review-submit */
+  .B-review-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hover state for B-review-submit button */
+  .B-review-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .B-review-stars {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .B-review-stars label {
+      margin-bottom: 10px;
+    }
+    .B-relative {
+      position: static;
+    }
+  }
+  
+  
+  /* Styles for B-review-list */
+ /* Styles for B-review-list */
+.B-review-list {
+    margin-top: 20px;
+  }
+  
+  /* Styles for B-review-item */
+  .B-review-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for B-review-user */
+  .B-review-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for B-review-user-photo */
+  .B-review-user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Styles for B-review-user-info */
+  .B-review-user-info {
+    font-weight: bold;
+  }
+  
+  /* Styles for B-review-user-rating */
+  .B-review-user-rating {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Styles for B-review-text */
+  .B-review-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+  }
+  
+  
+  /* Styles for B-book-now-title */
+  .B-book-now-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for B-input-group */
+  .B-input-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for B-input-label */
+  .B-input-label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  /* Styles for B-input-field */
+  .B-input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Styles for B-submit-button */
+  .B-submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .B-tour-content {
+      flex-direction: column;
+    }
+    .B-tour-left, .B-tour-right {
+      margin: 0;
+    }
+  }
+  

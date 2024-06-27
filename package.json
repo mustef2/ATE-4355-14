@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "name": "toureapp-main",
+  "version": "1.0.0",
+  "description": "Welcome to TourApp, an innovative and user-friendly web application designed to enhance your travel planning experience. Built using the powerful MERN stack (MongoDB, Express.js, React, and Node.js), TourApp offers a seamless platform for users to explore, review, and book tours, while providing administrators with comprehensive management tools.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

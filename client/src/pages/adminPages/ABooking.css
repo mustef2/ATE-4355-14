@@ -1,0 +1,96 @@
+/* Container */
+.AB-booking-table-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f9fafb;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .AB-table-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: auto;
+  }
+  
+  .AB-table-container {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table */
+  .AB-booking-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .AB-table-header {
+    padding: 12px 15px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  .AB-table-header-action {
+    text-align: right;
+  }
+  
+  .AB-table-row-even {
+    background-color: #f4f6f8;
+  }
+  
+  .AB-table-row-odd {
+    background-color: #ffffff;
+  }
+  
+  .AB-table-cell {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+  }
+  
+  .AB-table-cell-action {
+    text-align: right;
+  }
+  
+  /* Button */
+  .AB-delete-button {
+    padding: 6px 12px;
+    color: #ffffff;
+    background-color: #e53e3e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .AB-delete-button:hover {
+    background-color: #c53030;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .AB-table-header,
+    .AB-table-cell {
+      padding: 8px 10px;
+    }
+  
+    .AB-delete-button {
+      padding: 4px 8px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .AB-table-header,
+    .AB-table-cell {
+      font-size: 12px;
+    }
+  
+    .AB-delete-button {
+      font-size: 12px;
+    }
+  }
+  

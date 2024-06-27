@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch data</title>
+    <style>
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 70%;
+  height: 700px;
+  font-size: 20px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>
+            <h1 style="text-align: center;">Create Blog</h1>
+            <form id="myForm">
+                <label for="fname">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+                <label for="lname">Author Name</label>
+                <input type="text" id="author" name="author" placeholder="Auther name..">
+                <label for="lname">Body</label>
+                <input type="text" id="body" name="body" placeholder="write blog Body">
+                <label for="lname">comments</label>
+                <input type="text" id="cmt" name="cmt" placeholder="Your comments..">
+                <label for="lname">Date</label>
+                <input type="date" id="date" name="date" placeholder="Date..">
+                <label for="lname">hidden</label>
+                <input type="number" id="hidden" name="hidden" placeholder="Your hidden..">
+                <input type="submit" value="Submit">
+              </form>  
+        </div>
+      </div>
+      <h1>Form Data</h1>
+      <div class="flex-container">
+    <table id="formDataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Body</th>
+                <th>Comments</th>
+                <th>Date</th>
+                <th>Hidden</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically added here -->
+        </tbody>
+    </table>
+      </div>
+      <h1>Form Data</h1>
+    <div id="formDataContainer">
+
+    </div>
+</body>
+</html>
+<script>
+  //Post Data 
+            document.getElementById("myForm").addEventListener("submit", async function(event) {
+            event.preventDefault();
+            const formData = {
+                name: document.getElementById("name").value,
+                author: document.getElementById("author").value,
+                body: document.getElementById("body").value,
+                cmt: document.getElementById("cmt").value,
+                date: document.getElementById("date").value,
+                hidden: document.getElementById("hidden").value
+            };
+            console.log(formData)
+            await fetch("/api/blog", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log("Form data submitted successfully!");
+                } else {
+                    console.error("Failed to submit form data.");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+        });
+        
+////Display data 
+    document.addEventListener('DOMContentLoaded', async  () => {
+    const response = await fetch('/api/blog'); // Fetch form data from the server
+    const formData = await response.json(); // Parse the JSON response
+    console.log(formData.blog_data)
+    const formDataTable = document.getElementById('formDataTable').getElementsByTagName('tbody')[0];
+    
+    // Loop through the form data and create table rows to display on the page
+    formData.blog_data.forEach(data => {
+        const row = formDataTable.insertRow();
+        const nameCell = row.insertCell(0);
+        const authorCell = row.insertCell(1);
+        const bodyCell = row.insertCell(2);
+        const cmtCell = row.insertCell(3);
+        const dateCell = row.insertCell(4);
+        const hiddenCell = row.insertCell(5);
+
+        nameCell.textContent = data.name;
+        authorCell.textContent = data.author;
+        bodyCell.textContent = data.body;
+        cmtCell.textContent = data.comments;
+        dateCell.textContent = data.date;
+        hiddenCell.textContent = data.hidden;
+    });
+});
+
+        
+</script>

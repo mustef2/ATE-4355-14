@@ -1,0 +1,61 @@
+/* Styles for BD-container */
+.BD-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Styles for BD-stage */
+  .BD-stage {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px; /* Adjust width as needed */
+  }
+  
+  /* Styles for BD-content */
+  .BD-content {
+    margin-bottom: 20px;
+  }
+
+  /* Styles for BD-title */
+  .BD-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Styles for BD-message */
+  .BD-message {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Styles for BD-link */
+  .BD-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .BD-link span {
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  .BD-link:hover {
+    color: #0056b3;
+  }
+  
+  .BD-link:hover span {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
