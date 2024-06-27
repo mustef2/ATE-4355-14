@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip - ORIGIN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo"> <a href="./Home.html">ORIGIN</a></h2>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="./Destination.html">Destinations</a></li>
+                <li><a href="./About-us.html">About Us</a></li>
+                <li><a href="./Blogs.html">Blogs</a></li>
+                <li><a href="./Contact-us.html">Contact</a></li>
+              </ul>
+              <ul>
+                <li class="hideOnMobile"><a href="./Destination.html">Destinations</a></li>
+                <li class="hideOnMobile"><a href="./About-us.html">About Us</a></li>
+                <li class="hideOnMobile"><a href="./Blogs.html">Blogs</a></li>
+                <li class="hideOnMobile"><a href="./Contact-us.html">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+              </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>Welcome to Adventure</h1>
+            <p>Explore the world with us</p>
+            <button type="button" onclick="window.location.href='./Book.html';" class="apeal"> Book </button>
+        </div>
+    </header>
+    <header class="why-us">
+        <h1>Book Your Trip</h1>
+    </header>
+    <section class="trip-details">
+        <h2>Trip Details</h2>
+        <p>Select your desired trip and date:</p>
+        <form>
+            <label for="trip">Choose a trip:</label>
+            <select id="trip" name="trip">
+                <option value="trip1">Trip 1 - Bale Mountain</option>
+                <option value="trip2">Trip 2 - Benshangul gumuz</option>
+                <!-- Add more trips as needed -->
+            </select>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <button class="apeal_"  type="submit">Check Availability</button>
+        </form>
+    </section>
+    <section class="pricing-options">
+        <h2>Pricing Options</h2>
+        <div class="price-list">
+            <div class="price-option">
+                <h3>Basic Package</h3>
+                <p>$999 - Includes accommodation and guided tours</p>
+            </div>
+            <div class="price-option">
+                <h3>Deluxe Package</h3>
+                <p>$1999 - Includes everything in the Basic plus luxury accommodations</p>
+            </div>
+        </div>
+    </section>
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about our trips:</p>
+        <ul>
+            <li><strong>What is included in the price?</strong> The price includes all accommodations, transportation during the trip, and meals.</li>
+            <li><strong>Can I cancel my booking?</strong> Yes, bookings can be cancelled up to a month in advance for a full refund.</li>
+        </ul>
+    </section>
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, please feel free to contact us:</p>
+        <div class="contact-info">
+            <span>Phone:--- (+251) 9456-7890</span>
+            <span>Email:--- bookings@ORIGIN.com</span>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>ORIGIN has been creating memorable travel experiences for over a decade. Discover new destinations and explore the world with us.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Phone: (+251) 9456-7890</p>
+                <p>Email: contact@ORIGIN.com</p>
+            </div>
+            <div class="footer-section">
+                <p>© 2024 ORIGIN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

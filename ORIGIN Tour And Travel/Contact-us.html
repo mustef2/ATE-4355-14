@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ORIGIN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo"> <a href="./Home.html">ORIGIN</a></h2>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="./Destination.html">Destinations</a></li>
+                <li><a href="./About-us.html">About Us</a></li>
+                <li><a href="./Blogs.html">Blogs</a></li>
+                <li><a href="./Contact-us.html">Contact</a></li>
+              </ul>
+              <ul>
+                <li class="hideOnMobile"><a href="./Destination.html">Destinations</a></li>
+                <li class="hideOnMobile"><a href="./About-us.html">About Us</a></li>
+                <li class="hideOnMobile"><a href="./Blogs.html">Blogs</a></li>
+                <li class="hideOnMobile"><a href="./Contact-us.html">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+              </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>Welcome to Adventure</h1>
+            <p>Explore the world with us</p>
+            <button type="button" onclick="window.location.href='./Book.html';" class="apeal"> Book </button>
+        </div>
+    </header>
+    <header class="why-us">
+        <h1>Contact Us</h1>
+    </header>
+    <div class="flexuse"> 
+    <section class="our-location">
+        <div>
+            <h2>Our Location</h2>
+            <p>4 King George VI St, Addis Ababa</p>
+        </div>
+        <div class="map">
+            <p><img src="./Images/Screen Shot 2024-05-04 at 10.33.12 PM.png" alt="Location map"></p>
+        </div>
+    </section>
+    <section class="message-form">
+        <h2>Send Us a Message</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</div>
+    <section class="contact-info">
+        <h2>Contact</h2>
+        <p>Phone: (+251) 9456-7890</p>
+        <p>Email: contact@ORIGIN.com</p>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>ORIGIN has been creating memorable travel experiences for over a decade. Discover new destinations and explore the world with us.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Phone: (+251) 9456-7890</p>
+                <p>Email: contact@ORIGIN.com</p>
+            </div>
+            <div class="footer-section">
+                <p>© 2024 ORIGIN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

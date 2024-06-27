@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - ORIGIN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo"> <a href="./Home.html">ORIGIN</a></h2>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="./Destination.html">Destinations</a></li>
+                <li><a href="./About-us.html">About Us</a></li>
+                <li><a href="./Blogs.html">Blogs</a></li>
+                <li><a href="./Contact-us.html">Contact</a></li>
+              </ul>
+              <ul>
+                <li class="hideOnMobile"><a href="./Destination.html">Destinations</a></li>
+                <li class="hideOnMobile"><a href="./About-us.html">About Us</a></li>
+                <li class="hideOnMobile"><a href="./Blogs.html">Blogs</a></li>
+                <li class="hideOnMobile"><a href="./Contact-us.html">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+              </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>Welcome to Adventure</h1>
+            <p>Explore the world with us</p>
+            <button type="button" onclick="window.location.href='./Book.html';" class="apeal"> Book </button>
+        </div>
+    </header>
+    <header class="why-us">
+        <h1>Explore Our Destinations</h1>
+    </header>
+    <section class="search-bar">
+        <input type="text" placeholder="Search destinations..." id="searchInput">
+        <button type="submit" onclick="searchDestination()">Search</button>
+    </section>
+    <section class="adventure-trips">
+        <h2>Adventure Trips</h2>
+        <div class="trip-list">
+        </div>
+    </section>
+    <section class="popular-spots">
+        <h2>Popular Spots</h2>
+        <div class="spot-list">
+        </div>
+    </section>
+    <section class="recommended-places">
+        <h2>Recommended Places</h2>
+        <div class="place-list">
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>ORIGIN has been creating memorable travel experiences for over a decade. Discover new destinations and explore the world with us.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Phone: (+251) 9456-7890</p>
+                <p>Email: contact@ORIGIN.com</p>
+            </div>
+            <div class="footer-section">
+                <p>© 2024 ORIGIN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

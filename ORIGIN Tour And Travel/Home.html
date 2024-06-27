@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORIGIN Travel Agency</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <h2 class="logo"> <a href="./Home.html">ORIGIN</a></h2>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            <li><a href="./Destination.html">Destinations</a></li>
+            <li><a href="./About-us.html">About Us</a></li>
+            <li><a href="./Blogs.html">Blogs</a></li>
+            <li><a href="./Contact-us.html">Contact</a></li>
+          </ul>
+          <ul>
+            <li class="hideOnMobile"><a href="./Destination.html">Destinations</a></li>
+            <li class="hideOnMobile"><a href="./About-us.html">About Us</a></li>
+            <li class="hideOnMobile"><a href="./Blogs.html">Blogs</a></li>
+            <li class="hideOnMobile"><a href="./Contact-us.html">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+          </ul>
+    </nav>
+    <div class="hero-text">
+        <h1>Welcome to Adventure</h1>
+        <p>Explore the world with us</p>
+        <button type="button" onclick="window.location.href='./Book.html';" class="apeal"> Book </button>
+    </div>
+</header>
+<section class="why-us">
+    <h2>Why Choose Us?</h2>
+    <p>At ORIGIN, we specialize in crafting unforgettable travel experiences tailored to your personal tastes and preferences. Our expert team is dedicated to ensuring every detail is perfect, from bespoke itineraries to local, authentic adventures.</p>
+    <ul>
+        <li><div><strong>Personalized Services:</strong></div> Custom trips that match your dream destination and activities.</li>
+        <li><div><strong>Expert Knowledge:</strong></div> Years of experience and insights into the secrets of the travel industry.</li>
+        <li><div><strong>Exceptional Value:</strong></div> Competitive pricing with exclusive benefits for an unmatched value proposition.</li>
+        <li><div><strong>24/7 Support:</strong></div> Full-time support before, during, and after your trip to ensure a seamless experience.</li>
+    </ul>
+</section>
+<section class="our-services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+        <div class="service-item">
+            <img src="./Images/WW.jpg" alt="Custom Tours">
+            <h3>Custom Tours</h3>
+            <p>Create your perfect journey with tailored itineraries to suit your tastes.</p>
+        </div>
+        <div class="service-item">
+            <img src="./Images/GT.jpg" alt="Group Travel">
+            <h3>Group Travel</h3>
+            <p>Enjoy the company of others while discovering new destinations together.</p>
+        </div>
+        <div class="service-item">
+            <img src="./Images/Lux.jpg" alt="Luxury Resorts">
+            <h3>Luxury Resorts</h3>
+            <p>Stay at exquisite resorts with exceptional service and comfort.</p>
+        </div>
+        <div class="service-item">
+            <img src="./Images/Eco.jpg" alt="Eco Tours">
+            <h3>Eco Tours</h3>
+            <p>Explore the natural world in an environmentally friendly way.</p>
+        </div>
+    </div>
+</section>
+<section class="latest-news">
+    <h2>Latest News</h2>
+    <div class="news-container">
+        <article class="news-item">
+            <img src="./Images/pexels-oidonnyboy-12470910.jpg" alt="New Destination">
+            <div class="news-text">
+                <h3>New Adventure in Bali</h3>
+                <p>Explore the hidden gems of Bali with our newly launched tours. Special discounts available for early bookings!</p>
+                <a href="#">Read More</a>
+            </div>
+        </article>
+        <article class="news-item">
+            <img src="./Images/pexels-vome-16087749.jpg" alt="Travel Tips">
+            <div class="news-text">
+                <h3>Travel Tips for Solo Travelers</h3>
+                <p>Discover essential tips for solo travelers to ensure a safe and enjoyable journey. Get the best out of your solo adventure.</p>
+                <a href="#">Read More</a>
+            </div>
+        </article>
+        <article class="news-item">
+            <img src="./Images/pexels-robertkso-13357195.jpg" alt="Cultural Festivals">
+            <div class="news-text">
+                <h3>Cultural Festivals to Not Miss</h3>
+                <p>Mark your calendars for these exciting cultural festivals around the world. A must-experience for every travel enthusiast!</p>
+                <a href="#">Read More</a>
+            </div>
+        </article>
+    </div>
+</section>
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>ORIGIN has been creating memorable travel experiences for over a decade. Discover new destinations and explore the world with us.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Phone: (+251) 9456-7890</p>
+            <p>Email: contact@ORIGIN.com</p>
+        </div>
+        <div class="footer-section">
+            <p>© 2024 ORIGIN. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="app.js"></script>
+
+</body>
+</html>

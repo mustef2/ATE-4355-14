@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - ORIGIN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo"> <a href="./Home.html">ORIGIN</a></h2>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="./Destination.html">Destinations</a></li>
+                <li><a href="./About-us.html">About Us</a></li>
+                <li><a href="./Blogs.html">Blogs</a></li>
+                <li><a href="./Contact-us.html">Contact</a></li>
+              </ul>
+              <ul>
+                <li class="hideOnMobile"><a href="./Destination.html">Destinations</a></li>
+                <li class="hideOnMobile"><a href="./About-us.html">About Us</a></li>
+                <li class="hideOnMobile"><a href="./Blogs.html">Blogs</a></li>
+                <li class="hideOnMobile"><a href="./Contact-us.html">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+              </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>Welcome to Adventure</h1>
+            <p>Explore the world with us</p>
+            <button type="button" onclick="window.location.href='./Book.html';" class="apeal"> Book </button>
+        </div>
+    </header>
+    <section class="recent-posts">
+        <h2>Recent Posts</h2>
+        <div class="posts-container">
+            <article class="post">
+                <img src="./Images/pexels-abby-chung-371167-1252268.jpg" alt="Description of the image">
+                <h3><a href="#">All Travel Requirement</a></h3>
+                <p>Travel requirements vary based on your destination, departure country, and nationality. Here are some essential points to consider when planning your trip:
+
+                    <br>1, Passport: Ensure your passport is valid for at least six months beyond your return date.
+                    <br>2, Visa: Research visa requirements for your destination. Some countries require a visa prior to arrival, while others offer visa-free entry or visas on arrival.
+                    <br>3, Vaccinations: Check health guidelines and mandatory vaccines required by the destination country. Have your vaccination certificates handy if needed.
+                    <br>4, COVID-19 Protocols: Stay updated on pandemic guidelines like.................</p>
+            </article>
+            <article class="post">
+                <img src="./Images/pexels-yannick-b-739231218-19023587.jpg" alt="Description of the image">
+                <h3><a href="#">Why People Like Paris</a></h3>
+                <p>People like Paris for a variety of reasons, both personal and cultural. Here are some key aspects that make Paris an enduringly popular destination:
+
+                    <br>1, Romantic Atmosphere: Often referred to as "The City of Love," Paris is known for its charming streets, elegant architecture, and picturesque spots like the Seine River, the Eiffel Tower, and Montmartre.
+                    <br>2, Art and Culture: Paris is a treasure trove of artistic heritage, home to world-renowned museums such as the Louvre and Musée d'Orsay, as well as countless galleries and historic landmarks like Notre-Dame and the Opéra Garnier.
+                    <br>3, Café Culture: The city's vibrant café culture, with its terrace........................</p>
+            </article>
+            <article class="post">
+                <img src="./Images/pexels-asadphoto-1450379.jpg" alt="Description of the image">
+                <h3><a href="#">Beautifull Mosques To Visit</a></h3>
+                <p>Visiting beautiful mosques around the world offers a glimpse into the rich architectural traditions and cultural heritage of Islamic societies. Here are a few notable mosques that stand out for their history, architecture, and beauty:
+
+                    <br>1, Al-Masjid an-Nabawi (Medina, Saudi Arabia): Built by the Prophet Muhammad, this mosque is revered as one of the holiest sites in Islam. Its distinctive green dome is recognized worldwide.
+                    <br>2, Sultan Ahmed Mosque (Istanbul, Turkey): Also known as the Blue Mosque, it is famed for its exquisite blue tiles, six minarets, and harmonious architecture.
+                    <br>3, Sheikh Zayed Grand Mosque (Abu Dhabi, UAE): A marvel of modern Islamic architecture, it boasts 82 domes, over a thousand columns, and the world's largest hand-woven carpet.
+                    <br>4, Masjid al-Haram (Mecca, Saudi Arabia): The holiest site in Islam, this mosque surrounds......................</p>
+            </article>
+        </div>
+    </section>
+    <section class="featured-destinations">
+        <h2>Featured Destinations</h2>
+        <div class="destinations-container">
+            <div class="destination">
+                <img src="./Images/692368.jpeg">
+                <p><a href="#">Great Wall of China, China</a></p>
+            </div>
+            <div class="destination">
+                <img src="./Images/Addis-Abeba.jpeg">
+                <p><a href="#">Addis Ababa, Ethiopia</a></p>
+            </div>
+            <div class="destination">
+                <img src="./Images/Gambela.png">
+                <p><a href="#">Gambela, Ethiopia</a></p>
+            </div>
+            <div class="destination">
+                <img src="./Images/Main-Hawassa.jpeg">
+                <p><a href="#">Hawasa, Ethiopia</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe-section">
+        <h2>Subscribe for Updates</h2>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>ORIGIN has been creating memorable travel experiences for over a decade. Discover new destinations and explore the world with us.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Phone: (+251) 9456-7890</p>
+                <p>Email: contact@ORIGIN.com</p>
+            </div>
+            <div class="footer-section">
+                <p>© 2024 ORIGIN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
